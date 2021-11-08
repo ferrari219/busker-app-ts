@@ -4,6 +4,7 @@ const index = () => {
   return (
     <div>
       <ul>
+        <li>emotion 설치</li>
         <li>storybook preview.js</li>
         <li>storybook typescript-loader설치</li>
         <li>storybook main.js변경</li>
