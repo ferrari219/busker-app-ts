@@ -2,6 +2,10 @@
 // const Dotenv = require('dotenv-webpack');
 module.exports = {
   reactStrictMode: true,
+  babel: {
+    presets: ["@emotion/babel-preset-css-prop"],
+    plugins: ["@emotion"],
+  },
   webpack(config, { dev, webpack }) {
     config.module.rules.push({
       test: /\.svg$/,

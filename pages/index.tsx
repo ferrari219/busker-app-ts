@@ -4,6 +4,7 @@ const index = () => {
   return (
     <div>
       <ul>
+        <li>next.config emotion관련 수정</li>
         <li>emotion 설치</li>
         <li>storybook preview.js</li>
         <li>storybook typescript-loader설치</li>
