@@ -4,6 +4,7 @@ const index = () => {
   return (
     <div>
       <ul>
+        <li>svgr 설치, next.config 수정</li>
         <li>esline.json</li>
         <li>prettierrc</li>
         <li>tsconfig.json 수정</li>
