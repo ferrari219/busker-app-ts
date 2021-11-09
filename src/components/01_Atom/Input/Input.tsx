@@ -17,7 +17,7 @@ const inputStyle = css`
 interface IinputProps {
   value?: string;
   placeholder?: string;
-  width?: string;
+  width?: string | number;
   disable?: boolean;
   onClick?: () => void;
 }
