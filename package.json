@@ -15,15 +15,15 @@
     "@emotion/core": "^11.0.0",
     "@emotion/react": "^11.5.0",
     "@emotion/styled": "^11.3.0",
+    "@storybook/addon-actions": "^6.3.10",
+    "@storybook/addon-essentials": "^6.3.10",
+    "@storybook/addon-links": "^6.3.10",
+    "@storybook/react": "^6.3.10",
     "@svgr/webpack": "^5.5.0",
     "next": "12.0.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "url-loader": "^4.1.1",
-    "@storybook/addon-actions": "^6.3.10",
-    "@storybook/addon-essentials": "^6.3.10",
-    "@storybook/addon-links": "^6.3.10",
-    "@storybook/react": "^6.3.10"
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",

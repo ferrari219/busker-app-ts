@@ -11,4 +11,6 @@ const Template: ComponentStory<typeof EventLi> = (args) => (
 );
 
 export const Overview = Template.bind({});
-Overview.args = {};
+Overview.args = {
+  pic: "https://ferrari219.github.io/busker-app-ts/src/assets/img/map_sample.jpg",
+};

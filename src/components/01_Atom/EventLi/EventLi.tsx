@@ -2,7 +2,7 @@
 import { css } from "@emotion/react";
 import Link from "next/link";
 import Image from "next/image";
-// import ImgHam from "src/assets/img/sample_burger.jpg";
+// import ImgHam from "https://ferrari219.github.io/busker-app-ts/src/assets/img/map_sample.jpg";
 
 const liStyle = css`
   padding: 1rem 0;
@@ -41,14 +41,14 @@ interface IeventliProps {
   // id?: number;
   company: string;
   promotion?: string | null;
-  pic?: string;
+  pic: string | StaticImageData;
   lnk?: string;
 }
 
 const EventLi = ({
   company,
   promotion,
-  pic = "https://",
+  pic,
   lnk = "https://",
 }: IeventliProps) => {
   // console.log(pic);
