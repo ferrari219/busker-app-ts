@@ -1,8 +1,15 @@
 import React from "react";
+// /** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 
-const index = () => {
+const mainStyle = css`
+  background-color: black;
+  color: #fff;
+`;
+
+const Index = () => {
   return (
-    <div>
+    <div css={mainStyle}>
       <ul>
         <li>next.config emotion관련 수정</li>
         <li>emotion 설치</li>
@@ -22,4 +29,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;
