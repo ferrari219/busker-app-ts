@@ -1,7 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 // import { ReactComponent as Colors } from '../assets/colors.svg';
-// import React from "react";
 import * as icons from "./svg";
 
 const iconStyle = css`
