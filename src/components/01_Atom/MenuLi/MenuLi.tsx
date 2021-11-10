@@ -1,4 +1,4 @@
-// /** @jsxImportSource @emotion/react */
+/** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import Link from "next/link";
 import Icon from "../Icon";
