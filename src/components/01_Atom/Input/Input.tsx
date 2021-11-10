@@ -33,11 +33,10 @@ const Input = ({
 }: IinputProps) => {
   return (
     <input
-      css={inputStyle}
+      css={[inputStyle, { width }]}
       type="text"
       defaultValue={value}
       placeholder={placeholder}
-      style={{ width }}
       disabled={disable}
       onClick={onClick}
     />

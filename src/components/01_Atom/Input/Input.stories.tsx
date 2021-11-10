@@ -10,6 +10,7 @@ const Template: ComponentStory<typeof Input> = (args) => <Input {...args} />;
 export const Overview = Template.bind({});
 Overview.args = {
   value: "",
+  width: "100%",
   placeholder: "플레이스 홀더",
   disable: false,
 };

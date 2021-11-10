@@ -15,7 +15,8 @@ export const Overview = Template.bind({});
 Overview.args = {
   children: (
     <>
-      <Button />
+      <Button type="ghost">취소</Button>
+      <Button type="solid">확인</Button>
     </>
   ),
 };

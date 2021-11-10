@@ -25,14 +25,19 @@ export type IconProps = {
   round?: "0" | "5" | "10";
 };
 
-const Icon = ({ icon, fill, size, round, className }: IconProps) => {
+const Icon = ({
+  icon,
+  fill = "#333",
+  size = "2rem",
+  round,
+  className,
+}: IconProps) => {
   const SVGIcon = icons[icon];
   // console.log(SVGIcon);
   return (
     <SVGIcon
-      css={iconStyle}
+      css={[iconStyle, { fill, width: size, height: size }]}
       className={[className, `round-${round}`].join(" ")}
-      // style={{ width: "20rem" }}
     />
   );
 };

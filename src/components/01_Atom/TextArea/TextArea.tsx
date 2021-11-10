@@ -21,11 +21,7 @@ const TextArea = ({
   placeholder = "여기에 적어주세요.",
 }: ItextareaProps) => {
   return (
-    <textarea
-      css={textareaStyle}
-      style={{ height }}
-      placeholder={placeholder}
-    />
+    <textarea css={[textareaStyle, { height }]} placeholder={placeholder} />
   );
 };
 
