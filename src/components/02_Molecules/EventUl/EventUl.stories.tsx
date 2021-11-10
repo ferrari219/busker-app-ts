@@ -15,9 +15,9 @@ export const Overview = Template.bind({});
 Overview.args = {
   children: (
     <>
-      <EventLi />
-      <EventLi />
-      <EventLi />
+      <EventLi company="아무개회사1" />
+      <EventLi company="아무개회사2" />
+      <EventLi company="아무개회사3" />
     </>
   ),
 };

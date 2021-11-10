@@ -1,4 +1,4 @@
-// /** @jsxImportSource @emotion/react */
+/** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
 import Link from "next/link";
 import Image from "next/image";
@@ -41,7 +41,7 @@ interface IeventliProps {
   // id?: number;
   company: string;
   promotion?: string | null;
-  pic: string | StaticImageData;
+  pic?: string | StaticImageData;
   lnk?: string;
 }
 
@@ -58,7 +58,7 @@ const EventLi = ({
         <a>
           <div>
             <div css={imgStyle}>
-              <Image src={pic} width="200" height="200" alt="" />
+              {/* <Image src={pic} width="200" height="200" alt="" /> */}
             </div>
             <dl>
               <dt>{company}</dt>
