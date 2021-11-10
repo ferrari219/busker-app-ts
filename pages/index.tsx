@@ -25,6 +25,22 @@ const mapStyle = css`
   z-index: 0;
   left: 0;
   top: 0;
+  width: auto;
+  height: 100vh;
+
+  .bg {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    * {
+      // important 어쩔 수 없이 사용
+      width: inherit !important;
+      height: inherit !important;
+    }
+    img {
+      object-fit: cover;
+    }
+  }
   // 포인터
   .pointer {
     position: fixed;
@@ -39,12 +55,6 @@ const mapStyle = css`
   }
   svg {
     transform: rotate(-45deg);
-  }
-`;
-const bgmapStyle = css`
-  height: 100vh;
-  img {
-    object-fit: cover;
   }
 `;
 const searchStyle = css`
@@ -97,7 +107,7 @@ const Home: NextPage = () => {
             <div id="dev_pointer" className="pointer">
               <IconButton icon="IcoPointer" bgColor="pointer" shadow />
             </div>
-            <div css={bgmapStyle}>
+            <div className="bg">
               <Image src={MapSample} alt="지도 샘플" />
             </div>
           </div>
