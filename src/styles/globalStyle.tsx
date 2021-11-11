@@ -1,5 +1,4 @@
-import React from "react";
-// /** @jsxImportSource @emotion/react */
+/** @jsxImportSource @emotion/react */
 import { css, Global } from "@emotion/react";
 
 const global = (

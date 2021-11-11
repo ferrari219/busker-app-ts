@@ -5,9 +5,11 @@ import Icon from "../Icon";
 import { IconProps } from "../Icon/Icon";
 
 const liStyle = css`
+  margin: 0;
   a {
     display: flex;
     align-items: center;
+    padding: 0.5rem 0;
   }
   svg {
     width: 2rem;
