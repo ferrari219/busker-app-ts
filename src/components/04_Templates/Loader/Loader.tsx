@@ -1,7 +1,7 @@
 import React from "react";
 
 interface IloaderProps {
-  loading: string;
+  loading?: string;
 }
 
 const Loader = ({ loading = "로딩중" }: IloaderProps) => {

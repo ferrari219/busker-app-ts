@@ -38,7 +38,7 @@ const imgStyle = css`
 `;
 
 interface IeventliProps {
-  // id?: number;
+  id?: number;
   company: string;
   promotion?: string | null;
   pic?: string | StaticImageData;
@@ -46,6 +46,7 @@ interface IeventliProps {
 }
 
 const EventLi = ({
+  id,
   company,
   promotion,
   pic,
@@ -58,7 +59,7 @@ const EventLi = ({
         <a>
           <div>
             <div css={imgStyle}>
-              {/* <Image src={pic} width="200" height="200" alt="" /> */}
+              <Image src={pic} width="200" height="200" alt="" />
             </div>
             <dl>
               <dt>{company}</dt>
