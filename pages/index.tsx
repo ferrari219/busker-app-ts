@@ -1,15 +1,14 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-// import { useState } from "react";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import MapSample from "src/assets/img/map_sample.jpg";
-import FootFloat from "src/components/03_Organism/FootFloat";
 import IconButton from "src/components/02_Molecules/IconButton";
+import FootFloat from "src/components/03_Organism/FootFloat";
+import SearchResult from "src/components/03_Organism/SearchResult";
 import Header from "src/components/03_Organism/Header";
 import Nav from "src/components/04_Templates/Nav";
-import SearchResult from "src/components/03_Organism/SearchResult";
 import { SrOnly } from "src/styles/globalStyle";
 
 const h1Style = css`

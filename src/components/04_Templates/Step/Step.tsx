@@ -4,15 +4,14 @@ import { useState } from "react";
 import StepUl from "src/components/02_Molecules/StepUl";
 import StepLi from "src/components/01_Atom/StepLi/StepLi";
 import StepCont from "src/components/02_Molecules/StepCont";
-import Image from "next/image";
-import ImgHam from "src/assets/img/sample_burger.jpg";
 import ImgMap from "src/assets/img/map_sample.jpg";
-import Input from "src/components/01_Atom/Input";
+
 import Button from "src/components/01_Atom/Button";
 import ButtonWrap from "src/components/02_Molecules/ButtonWrap";
 import TextArea from "src/components/01_Atom/TextArea";
 import IconButton from "src/components/02_Molecules/IconButton";
 import A from "src/components/01_Atom/A";
+import Step1 from "src/components/03_Organism/Step1";
 
 const wrapStyle = css``;
 const mapStyle = css`
@@ -38,21 +37,7 @@ const content = [
   {
     id: 1,
     tab: "스토어등록",
-    content: (
-      <>
-        <h3>생성할 스토어 대표사진과 이름을 입력해주세요</h3>
-        <div>
-          <Image src={ImgHam} width="890" height="670" alt="대표사진" />
-          <p>
-            <Input
-              value="뉴욕 수제버거"
-              placeholder="스토어 이름"
-              width="100%"
-            />
-          </p>
-        </div>
-      </>
-    ),
+    content: <Step1 />,
   },
   {
     id: 2,
