@@ -168,7 +168,7 @@ const Step = ({ children }: IstepProps) => {
           </Button>
         )}
         {currentItem.id === content.length ? (
-          <A type="light" href="/">
+          <A type="solid" href="/">
             스토어 생성완료
           </A>
         ) : (
