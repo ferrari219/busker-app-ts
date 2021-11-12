@@ -1,21 +1,16 @@
-import Image from "next/image";
-import ImgHam from "src/assets/img/sample_burger.jpg";
-import Input from "src/components/01_Atom/Input";
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
+import TextArea from "src/components/01_Atom/TextArea";
 
-// interface Istep1Props {}
+// interface Istep4Props {}
 
-const Step1 = () => {
+const Step4 = () => {
   return (
     <div>
-      <h3>생성할 스토어 대표사진과 이름을 입력해주세요</h3>
-      <div>
-        {/* <Image src={ImgHam} width="890" height="670" alt="대표사진" /> */}
-        <p>
-          <Input value="뉴욕 수제버거" placeholder="스토어 이름" width="100%" />
-        </p>
-      </div>
+      <h3>스토어에 대한 상세정보를 입력해주세요.</h3>
+      <TextArea height="20rem" />
     </div>
   );
 };
 
-export default Step1;
+export default Step4;

@@ -1,3 +1,3 @@
-import Step__1 from './Step3';
+import Step3 from './Step3';
 
-export default Step__1;
+export default Step3;

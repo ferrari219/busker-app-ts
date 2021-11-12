@@ -4,34 +4,15 @@ import { useState } from "react";
 import StepUl from "src/components/02_Molecules/StepUl";
 import StepLi from "src/components/01_Atom/StepLi/StepLi";
 import StepCont from "src/components/02_Molecules/StepCont";
-import ImgMap from "src/assets/img/map_sample.jpg";
 
 import Button from "src/components/01_Atom/Button";
 import ButtonWrap from "src/components/02_Molecules/ButtonWrap";
-import TextArea from "src/components/01_Atom/TextArea";
-import IconButton from "src/components/02_Molecules/IconButton";
 import A from "src/components/01_Atom/A";
 import Step1 from "src/components/03_Organism/Step1";
-
-const wrapStyle = css``;
-const mapStyle = css`
-  position: relative;
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-  // 포인터
-  button {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-  }
-  svg {
-    transform: rotate(-45deg);
-  }
-`;
+import Step2 from "src/components/03_Organism/Step2";
+import Step3 from "src/components/03_Organism/Step3";
+import Step4 from "src/components/03_Organism/Step4";
+import Step5 from "src/components/03_Organism/Step5";
 
 const content = [
   {
@@ -42,43 +23,17 @@ const content = [
   {
     id: 2,
     tab: "위치 등록",
-    content: (
-      <>
-        <h3>스토어 위치를 맵에서 선택하고 주소를 적어주세요.</h3>
-        <div css={wrapStyle}>
-          <div css={mapStyle}>
-            <IconButton icon="IcoPointer" bgColor="pointer" shadow />
-            <Image src={ImgMap} width="890" height="670" alt="맵사진" />
-          </div>
-          <p>
-            <Input
-              value="뉴욕시 도봉구 강남대로566"
-              placeholder="스토어 위치"
-              width="100%"
-            />
-          </p>
-        </div>
-      </>
-    ),
+    content: <Step2 />,
   },
   {
     id: 3,
     tab: "메뉴 등록",
-    content: (
-      <>
-        <h3>스토어 메뉴, 가격을 입력해주세요.</h3>
-      </>
-    ),
+    content: <Step3 />,
   },
   {
     id: 4,
     tab: "상세정보",
-    content: (
-      <>
-        <h3>스토어에 대한 상세정보를 입력해주세요.</h3>
-        <TextArea height="20rem" />
-      </>
-    ),
+    content: <Step4 />,
   },
   {
     id: 5,

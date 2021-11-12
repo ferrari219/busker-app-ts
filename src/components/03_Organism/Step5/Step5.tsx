@@ -2,9 +2,9 @@ import Image from "next/image";
 import ImgHam from "src/assets/img/sample_burger.jpg";
 import Input from "src/components/01_Atom/Input";
 
-// interface Istep1Props {}
+// interface Istep5Props {}
 
-const Step1 = () => {
+const Step5 = () => {
   return (
     <div>
       <h3>생성할 스토어 대표사진과 이름을 입력해주세요</h3>
@@ -18,4 +18,4 @@ const Step1 = () => {
   );
 };
 
-export default Step1;
+export default Step5;

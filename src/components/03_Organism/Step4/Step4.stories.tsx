@@ -1,12 +1,12 @@
 import { ComponentMeta, ComponentStory } from "@storybook/react";
-import Step1 from "./Step4";
+import Step4 from "./Step4";
 
 export default {
-  title: "03_Organism/Step1",
-  component: Step1,
-} as ComponentMeta<typeof Step1>;
+  title: "03_Organism/Step4",
+  component: Step4,
+} as ComponentMeta<typeof Step4>;
 
-const Template: ComponentStory<typeof Step1> = (args) => <Step1 />; //{...args}
+const Template: ComponentStory<typeof Step4> = (args) => <Step4 />; //{...args}
 
 export const Overview = Template.bind({});
 Overview.args = {};

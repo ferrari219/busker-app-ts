@@ -1,21 +1,51 @@
+/** @jsxImportSource @emotion/react */
+import { css } from "@emotion/react";
 import Image from "next/image";
-import ImgHam from "src/assets/img/sample_burger.jpg";
+import ImgMap from "src/assets/img/map_sample.jpg";
 import Input from "src/components/01_Atom/Input";
+import IconButton from "src/components/02_Molecules/IconButton";
 
-// interface Istep1Props {}
+const wrapStyle = css``;
+const mapStyle = css`
+  position: relative;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+  // 포인터
+  button {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  svg {
+    transform: rotate(-45deg);
+  }
+`;
 
-const Step1 = () => {
+// interface Istep2Props {}
+
+const Step2 = () => {
   return (
     <div>
-      <h3>생성할 스토어 대표사진과 이름을 입력해주세요</h3>
-      <div>
-        {/* <Image src={ImgHam} width="890" height="670" alt="대표사진" /> */}
+      <h3>스토어 위치를 맵에서 선택하고 주소를 적어주세요.</h3>
+      <div css={wrapStyle}>
+        <div css={mapStyle}>
+          <IconButton icon="IcoPointer" bgColor="pointer" shadow />
+          <Image src={ImgMap} width="890" height="670" alt="맵사진" />
+        </div>
         <p>
-          <Input value="뉴욕 수제버거" placeholder="스토어 이름" width="100%" />
+          <Input
+            value="뉴욕시 도봉구 강남대로566"
+            placeholder="스토어 위치"
+            width="100%"
+          />
         </p>
       </div>
     </div>
   );
 };
 
-export default Step1;
+export default Step2;
