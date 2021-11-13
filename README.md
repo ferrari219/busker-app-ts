@@ -1,7 +1,6 @@
 # Frontend
 
-Burger, Steak, Curry '버스커', 우리 동네 길거리 음식은 어디?
-<https://busker-app-ts.vercel.app/>
+[Burger, Steak, Curry '버스커', 우리 동네 길거리 음식은 어디?](https://busker-app-ts.vercel.app/)
 
 '우리 동네 길거리 음식은 어디에 있을까'라는 의문점에서 제작을 시작했습니다.
 러프하게 만들고 나서 아이디어를 구체화 하면서 부분 부분 다듬어 나가고 있습니다.
@@ -32,7 +31,7 @@ Burger, Steak, Curry '버스커', 우리 동네 길거리 음식은 어디?
 
 ## Components
 
-[스토리북 확인하기](https://618f1cd551715f003abc7e19-qhuesupiyk.chromatic.com/?path=/story/01-atom-a--overview){:target="\_blank"}
+[스토리북 확인하기](https://618f1cd551715f003abc7e19-qhuesupiyk.chromatic.com/?path=/story/01-atom-a--overview)
 
 Atomic Design 방식
 
