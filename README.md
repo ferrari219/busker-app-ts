@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend
 
-## Getting Started
+[Burger, Steak, Curry '버스커', 우리 동네 길거리 음식은 어디?](https://busker-app-ts.vercel.app/)
 
-First, run the development server:
+'우리 동네 길거리 음식은 어디에 있을까'라는 의문점에서 제작을 시작했습니다.
+러프하게 만들고 나서 아이디어를 구체화 하면서 부분 부분 다듬어 나가고 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+구축해보면서 더 나은 운영/관리 방법에 대한 고민이 많았습니다.
+오픈 후에도 계속 깔끔한 코드로 중복 제작을 방지하고 누가 처음하더라도 한사람이 작성한것처럼 운영하려면 지금의 방식으로 하면 어떨까 하는 생각에서 고민하다 제작했습니다. 스토리북 구성으로 디자이너나 기획자와의 협업에도 큰 도움이 되더군요.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Dev Install Module
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [x] next.js
+- [x] typescript
+- [x] storybook
+- [x] emotion
+- [x] svgr/webpack
+- [x] axios
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Design Tool
 
-## Learn More
+- [x] Sketch App
 
-To learn more about Next.js, take a look at the following resources:
+## Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [x] Home: 메인화면
+- [x] Add: 스토어 생성
+- [x] Event: 프로모션 할인 소식, 공지
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Components
 
-## Deploy on Vercel
+[스토리북 확인하기](https://618f1cd551715f003abc7e19-qhuesupiyk.chromatic.com/?path=/story/01-atom-a--overview)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Atomic Design 방식
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [x] 01_Atom: 단일기능(버튼, 인풋, 아이콘, li 등)
+- [x] 02_Molecules: 2가지 이상 복합 컴포넌트 / Wrap(ul)
+- [x] 03_Organism: Atom+Molecules
+- [x] 04_Templates: 기능 제어 가능한 모듈 단위
+- [x] 99_Etc: Heads, Layout
+
+# Backend
+
+## Dev Install Module
+
+- [ ] 작성예정
