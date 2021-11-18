@@ -89,9 +89,9 @@ const Home: NextPage = () => {
     <section>
       {/* https://projects.invisionapp.com/share/JZRMNHUH2BC */}
       {/* https://61829da196f986003a313056-vzgkewuklh.chromatic.com/?path=/story/01-atom-a--overview */}
-      <Head>
+      {/* <Head>
         <title>리바트몰</title>
-      </Head>
+      </Head> */}
       <main>
         <h1 css={h1Style}>메인 페이지</h1>
         <section css={mainStyle}>
